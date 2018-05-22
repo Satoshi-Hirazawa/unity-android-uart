@@ -1,0 +1,81 @@
+# =============== #
+# Unity generated #
+# =============== #
+Unity/*/Temp/
+Unity/*/Obj/
+Unity/*/UnityGenerated/
+Unity/*/Library/
+
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+Unity/*/*.userprefs
+Unity/*/*.app
+Unity/*/build/*.app
+Unity/*/*.apk
+Unity/*/build/*.apk
+*.csproj
+*.pidb
+*.suo
+Unity/*/*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# ============ #
+# for others   #
+# ============ #
+
+*.log #log files, for some plugins
+*.pyc #python bytecode cache, for some plugins.
+sysinfo.txt #Unity3D Generated File On Crash Reports
+Node/random/log/*
+!.gitkeep
+
+
+
+# =============== #
+# Android         #
+# =============== #
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+local.properties
+.classpath
+.project
+proguard/
+*.ipr
+*.iws
+app/build/
+
+.idea/*.xml
+
+!.idea/gradle.xml
+!.idea/runConfigurations/*.xml
