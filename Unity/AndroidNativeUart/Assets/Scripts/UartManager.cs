@@ -21,7 +21,7 @@ public class UartManager : MonoBehaviour {
 	}
 
 	void Start () {
-		nu.Connection ();
+		nu.Connection (9600);
 	}
 
 	void Update () {

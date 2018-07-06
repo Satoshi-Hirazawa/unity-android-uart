@@ -1,10 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
 
 public class NativeUart : MonoBehaviour{
@@ -66,10 +62,10 @@ public class NativeUart : MonoBehaviour{
 	}
 
 
-	public void Connection(){
+	public void Connection(int boud){
 		#if UNITY_ANDROID
 		context.Call ("runOnUiThread", new AndroidJavaRunnable(() => {
-			nu.CallStatic ("connection");
+			nu.CallStatic ("connection", boud);
 		}));
 		#endif
 	}

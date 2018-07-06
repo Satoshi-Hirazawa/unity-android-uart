@@ -5,12 +5,16 @@
 
 ### Serial Device
 - Arduino Uno
+- Arduino Duemilanove
+- Arduino NANO
+- SWITCH_SCIENCE Usb-Serial-FTDI
 
 ### Android
 
 - Android F-04H
 - Android SO-02H
 - Android SO-02F
+- Android Nexus5
 
 
 ## Usage
@@ -36,10 +40,10 @@
     NativeUart.Init();
 
 ### Uartの接続
-    NativeUart.Connection();
+    NativeUart.Connection(int boud);
 
 ### 文字列送信
-    NativeUart.Send();
+    NativeUart.Send(string msg);
 
 ### 文字列送信(終端に改行あり)
     NativeUart.SendLine();
@@ -72,7 +76,7 @@
     }
 
     void Start () {
-        nu.Connection ();
+        nu.Connection (9600);
     }
 
     void Update () {

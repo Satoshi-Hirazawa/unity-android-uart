@@ -12,6 +12,8 @@ public class UartTest : MonoBehaviour {
 	Text serialMessage;
 	[SerializeField]
 	Text serialDeviceList;
+	[SerializeField]
+ 	InputField boudrateInput;
 
 	[SerializeField]
 	Button connectButton;
@@ -24,6 +26,7 @@ public class UartTest : MonoBehaviour {
 	NativeUart nu;
 
 	bool setLED = false;
+	int boudrate = 9600;
 
 	void Awake(){
 		nu = NativeUart.Instance;
@@ -35,6 +38,10 @@ public class UartTest : MonoBehaviour {
 		});
 		sendButton.onClick.AddListener  (() => {
 			SerialSend();
+		});
+
+		boudrateInput.onEndEdit.AddListener((string boud) => {
+			 boudrate = int.Parse(boud);
 		});
 
 		nu.OnUartState += SerialState;
@@ -60,7 +67,7 @@ public class UartTest : MonoBehaviour {
 	}
 		
 	public void SerialConnection(){
-		nu.Connection ();
+		nu.Connection (boudrate);
 	}
 
 	public void SerialSend(){
