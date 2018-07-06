@@ -21,7 +21,8 @@
 
 ### Install
 
-1. UnityPackageをインポート
+1. AndroidNativeUart.unitypackageをインポート
+2. Unity/AndroidNativeUart/Assets/Plugins/Android/AndroidManifest.xml を Assets/Plugins下にコピー
 
 ### Test
 
