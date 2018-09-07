@@ -1,5 +1,5 @@
 
-Unity で AndroidとArduinoのシリアル通信をするライブラリ
+Unity で AndroidとArduinoのシリアル通信を行うライブラリ
 
 ### Support
 
