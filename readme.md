@@ -1,7 +1,8 @@
 
-# Unity で Androidのシリアル通信をするライブラリ
+# 
+Unity で AndroidとArduinoのシリアル通信をするライブラリ
 
-## 動作環境・テスト環境
+## Support
 
 ### Serial Device
 - Arduino Uno
