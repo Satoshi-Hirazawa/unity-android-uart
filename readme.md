@@ -1,16 +1,15 @@
 
-# 
 Unity で AndroidとArduinoのシリアル通信をするライブラリ
 
-## Support
+### Support
 
-### Serial Device
+#### Serial Device
 - Arduino Uno
 - Arduino Duemilanove
 - Arduino NANO
 - SWITCH_SCIENCE Usb-Serial-FTDI
 
-### Android
+#### Android
 
 - Android F-04H
 - Android SO-02H
@@ -18,14 +17,14 @@ Unity で AndroidとArduinoのシリアル通信をするライブラリ
 - Android Nexus5
 
 
-## Usage
+### Usage
 
-### Install
+#### Install
 
 1. AndroidNativeUart.unitypackageをインポート
 2. Unity/AndroidNativeUart/Assets/Plugins/Android/AndroidManifest.xml を Assets/Plugins下にコピー
 
-### Test
+#### Test
 
 1. testシーンを開く
 2. Unityをビルド
@@ -36,39 +35,39 @@ Unity で AndroidとArduinoのシリアル通信をするライブラリ
 7. logにArduinoからのメッセーゾが表示される
 8. sendButtonでLEDのON/OFF
 
-### Method
+#### Method
 
-### Uartの初期化
+##### Uartの初期化
     NativeUart.Init();
 
-### Uartの接続
+##### Uartの接続
     NativeUart.Connection(int boud);
 
-### 文字列送信
+##### 文字列送信
     NativeUart.Send(string msg);
 
-### 文字列送信(終端に改行あり)
+##### 文字列送信(終端に改行あり)
     NativeUart.SendLine();
 
-### Uartの切断(未実装)
+##### Uartの切断(未実装)
     NativeUart.Disconnect();
 
-### Event
+##### Event
 
-### Uartの状態を返すイベント
+##### Uartの状態を返すイベント
     NativeUart.OnUartState
 
-#### 接続デバイスを返すイベント
+###### 接続デバイスを返すイベント
     NativeUart.OnUartDeviceList
 
-#### Uartのメッセージを返すイベント
+###### Uartのメッセージを返すイベント
     NativeUart.OnUartMessageRead
 
-#### Uartのメッセージを改行ごとに返すイベント
+###### Uartのメッセージを改行ごとに返すイベント
     NativeUart.OnUartMessageReadLine
 
 
-### Test Code
+#### Test Code
 
     private NativeUart nu;
 
